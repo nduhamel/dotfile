@@ -6,5 +6,5 @@
 #
 ###################################
 
-mkdir $HOME/.config
+mkdir $HOME/.config/environment.d
 mkdir -p $HOME/.local/{bin,share}
