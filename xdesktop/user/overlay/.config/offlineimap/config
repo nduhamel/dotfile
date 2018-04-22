@@ -1,0 +1,20 @@
+[general]
+accounts = jombi
+
+[Account jombi]
+localrepository = jombi-local
+remoterepository = jombi-server
+#postsynchook = script.sh
+
+[Repository jombi-local]
+type = Maildir
+localfolders = ~/.mail
+
+[Repository jombi-server]
+type = IMAP
+ssl = yes
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+remoteport = 993
+remotehost = mail.jombi.fr
+remoteuser = nicolas@jombi.fr
+folderfilter = lambda folder: folder not in ['dovecot.sieve']
