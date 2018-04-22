@@ -1,0 +1,7 @@
+# For dotfile installation
+stow
+git
+
+# Soft
+vim
+offlineimap
