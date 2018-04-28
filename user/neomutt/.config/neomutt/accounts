@@ -1,8 +1,6 @@
 # vim: filetype=muttrc
 
 #Account Settings -----------------------------------
-set spoolfile = "+INBOX"
-
 mailboxes +INBOX \
           +Archive \
           +Administratif \
@@ -14,10 +12,12 @@ mailboxes +INBOX \
           +Trash \
           +Junk
 
+set spoolfile = "+INBOX"
 set mbox = "+Archive"
+set mbox_type = Maildir
 set postponed = "+Drafts"
+set record = "+Sent"
 
 set from     = "nicolas@jombi.fr"
 set sendmail = "/usr/bin/msmtp -C $XDG_CONFIG_HOME/msmtp/msmtprc -a jombi"
 set sendmail_wait = 0
-# unset record

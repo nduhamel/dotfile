@@ -57,6 +57,7 @@ bind index Y noop
 bind index Z noop
 bind index a noop
 bind index b noop
+bind index c noop
 bind index d noop
 bind index e noop
 bind index g noop
@@ -71,7 +72,8 @@ bind index G last-entry
 macro index gf <change-folder>?
 macro index gi <change-folder><kill-line>=INBOX<Enter>
 
-bind index c copy-message
+bind index cc copy-message
+macro index ca <save-message><kill-line>=Archive<Enter>
 macro index m <save-message>?
 bind index dd delete-message
 bind index dt delete-thread
