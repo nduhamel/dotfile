@@ -71,7 +71,7 @@ bind index G last-entry
 macro index gf <change-folder>?
 
 bind index c copy-message
-bind index m save-message
+macro index m <save-message>?
 bind index dd delete-message
 bind index dt delete-thread
 bind index f forward-message
