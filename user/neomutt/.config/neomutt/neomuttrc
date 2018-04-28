@@ -1,0 +1,46 @@
+#Paths ----------------------------------------------
+set folder = $HOME/.mail
+set alias_file = $XDG_CONFIG_HOME/neomutt/alias
+set signature = $XDG_CONFIG_HOME/neomutt/signature
+set mailcap_path = $XDG_CONFIG_HOME/neomutt/mailcap
+set header_cache = $XDG_CACHE_HOME/neomutt/cache/headers
+set message_cachedir = $XDG_CACHE_HOME/neomutt/cache/bodies
+set certificate_file = $XDG_CACHE_HOME/neomutt/certificates
+set tmpdir = $XDG_RUNTIME_DIR
+
+#Source file ---------------------------------------
+source $XDG_CONFIG_HOME/neomutt/accounts
+source $XDG_CONFIG_HOME/neomutt/colors
+source $XDG_CONFIG_HOME/neomutt/index
+source $XDG_CONFIG_HOME/neomutt/pager
+source $XDG_CONFIG_HOME/neomutt/keybinding
+
+
+#Basic options --------------------------------------
+unset help
+set wait_key = no
+set mbox_type = Maildir
+set timeout = 3
+set mail_check = 0
+unset move # not sure, see man neomuttrc
+set delete
+unset confirmappend
+set quit
+unset mark_old
+set pipe_decode # not sure, strip headers and eval mimes when piping
+set thorough_search # same, strip headers and eval mimes before searching
+
+#Sidebar ---------------------------------------------
+set sidebar_visible = yes
+set sidebar_width = 24
+
+#Status Bar ------------------------------------------
+set status_chars  = " *%A"
+set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
+
+#Header Options -------------------------------------
+ignore *
+unignore from: to: cc: date: subject:
+unhdr_order *
+hdr_order from: to: cc: date: subject:
+

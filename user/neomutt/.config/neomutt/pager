@@ -1,0 +1,11 @@
+# vim: filetype=muttrc
+
+set pager_index_lines = 10
+set pager_stop
+set pager_context = 3
+set menu_scroll
+set tilde
+unset markers
+
+alternative_order text/plain text/enriched text/html
+auto_view text/html

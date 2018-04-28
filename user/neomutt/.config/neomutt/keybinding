@@ -1,0 +1,131 @@
+# vim: filetype=muttrc
+
+########
+# Index
+#
+#
+# Reset
+
+bind index \CB noop
+bind index \CD noop
+bind index \CE noop
+bind index \CF noop
+bind index \CK noop
+bind index \CN noop
+bind index \CP noop
+bind index \CR noop
+bind index \CT noop
+bind index \CU noop
+bind index <Tab> noop
+bind index <Return> noop
+bind index . noop
+bind index F noop
+bind index <Esc><Tab> noop
+bind index <Esc>C noop
+bind index <Esc>P noop
+bind index <Esc>V noop
+bind index <Esc>b noop
+bind index <Esc>c noop
+bind index <Esc>d noop
+bind index <Esc>e noop
+bind index <Esc>k noop
+bind index <Esc>l noop
+bind index <Esc>n noop
+bind index <Esc>p noop
+bind index <Esc>r noop
+bind index <Esc>s noop
+bind index <Esc>t noop
+bind index <Esc>u noop
+bind index <Esc>v noop
+bind index \# noop
+bind index $ noop
+bind index % noop
+bind index & noop
+bind index @ noop
+bind index C noop
+bind index D noop
+bind index M noop
+bind index N noop
+bind index O noop
+bind index P noop
+bind index Q noop
+bind index T noop
+bind index U noop
+bind index V noop
+bind index W noop
+bind index Y noop
+bind index a noop
+bind index b noop
+bind index e noop
+bind index q noop
+
+
+# Set
+bind index g noop
+bind index gg first-entry
+bind index G last-entry
+bind index gf change-folder
+
+bind index c copy-message
+bind index m save-message
+bind index d noop
+bind index dd delete-message
+bind index dt delete-thread
+bind index f forward-message
+
+bind index s noop
+bind index ss flag-message
+bind index sf set-flag
+bind index Sf clear-flag
+bind index sl edit-label
+bind index sn toggle-new
+bind index sr read-thread #set entire thread read
+bind index st tag-entry
+
+bind index r reply
+bind index R group-reply
+bind index <space> collapse-thread
+
+bind index l display-message
+bind index <Enter> display-message
+bind index n mail
+
+bind index z noop
+bind index zz sync-mailbox
+
+bind index Z noop
+bind index ZZ quit
+bind index ZQ exit
+
+##################
+# Sidebar
+#
+bind index,pager J sidebar-next
+bind index,pager K sidebar-prev
+bind index,pager L sidebar-open
+
+##################
+# Pager
+#
+bind pager z noop
+bind pager h noop
+
+bind pager g noop
+bind pager gg top
+bind pager G bottom
+bind pager k previous-line
+bind pager j next-line
+bind pager h exit
+
+
+bind pager za view-attachments
+macro pager zu "<pipe-entry> urlscan<Enter>"
+
+##################
+# Attach
+#
+
+bind attach s noop
+macro attach s <save-entry><kill-line>$HOME/Downloads/<Enter>y<Enter>
+bind attach l view-attach
+bind attach h exit

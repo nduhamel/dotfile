@@ -1,0 +1,18 @@
+# vim: filetype=muttrc
+
+#Account Settings -----------------------------------
+set spoolfile = "+INBOX"
+
+mailboxes +INBOX \
+          +Archive \
+          +Administratif \
+          +Pneumo \
+          +Commandes \
+          +Maison \
+          +Sent \
+          +Drafts \
+          +Trash \
+          +Junk
+
+set mbox = "+Archive"
+set postponed = "+Drafts"
