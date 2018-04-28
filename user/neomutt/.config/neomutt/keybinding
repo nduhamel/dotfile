@@ -82,6 +82,7 @@ bind index Sf clear-flag
 bind index sl edit-label
 bind index sn toggle-new
 bind index sr read-thread #set entire thread read
+macro index sR <tag-pattern>~N<Enter><tag-prefix><clear-flag>N<untag-pattern>.<Enter> #Mark all as Read
 bind index st tag-entry
 
 bind index r reply
@@ -120,6 +121,7 @@ bind pager h exit
 
 bind pager za view-attachments
 macro pager zu "<pipe-entry> urlscan<Enter>"
+bind pager zh display-toggle-weed
 
 ##################
 # Attach

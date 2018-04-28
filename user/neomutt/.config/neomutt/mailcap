@@ -3,4 +3,4 @@ text/html; lynx -assume_charset=%{charset} -display_charset=utf-8 -dump %s; name
 
 audio/*; /usr/bin/xdg-open %s
 image/*; /usr/bin/xdg-open %s
-application/pdf; /usr/bin/xdg-open %s
+application/*; /usr/bin/xdg-open %s

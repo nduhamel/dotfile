@@ -16,3 +16,8 @@ mailboxes +INBOX \
 
 set mbox = "+Archive"
 set postponed = "+Drafts"
+
+set from     = "nicolas@jombi.fr"
+set sendmail = "/usr/bin/msmtp -C $XDG_CONFIG_HOME/msmtp/msmtprc -a jombi"
+set sendmail_wait = 0
+# unset record
