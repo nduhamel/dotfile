@@ -69,6 +69,7 @@ bind index z noop
 bind index gg first-entry
 bind index G last-entry
 macro index gf <change-folder>?
+macro index gi <change-folder><kill-line>=INBOX<Enter>
 
 bind index c copy-message
 macro index m <save-message>?
@@ -148,3 +149,8 @@ bind compose p postpone-message
 
 macro compose q <exit>n<Enter> #don't ask
 macro compose a <attach-file>? #show browser
+
+##################
+# browser
+#
+bind browser l select-entry
