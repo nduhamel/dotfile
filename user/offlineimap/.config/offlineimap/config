@@ -1,4 +1,5 @@
 [general]
+pythonfile = $XDG_CONFIG_HOME/offlineimap/getpass.py
 accounts = jombi
 metadata = $XDG_DATA_HOME/offlineimap
 
@@ -19,3 +20,4 @@ remoteport = 993
 remotehost = mail.jombi.fr
 remoteuser = nicolas@jombi.fr
 folderfilter = lambda folder: folder not in ['dovecot.sieve']
+remotepasseval = get_pass("nicolas@jombi.fr")
