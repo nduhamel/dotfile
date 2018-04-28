@@ -54,26 +54,28 @@ bind index U noop
 bind index V noop
 bind index W noop
 bind index Y noop
+bind index Z noop
 bind index a noop
 bind index b noop
+bind index d noop
 bind index e noop
+bind index g noop
 bind index q noop
+bind index s noop
+bind index z noop
 
 
 # Set
-bind index g noop
 bind index gg first-entry
 bind index G last-entry
-bind index gf change-folder
+macro index gf <change-folder>?
 
 bind index c copy-message
 bind index m save-message
-bind index d noop
 bind index dd delete-message
 bind index dt delete-thread
 bind index f forward-message
 
-bind index s noop
 bind index ss flag-message
 bind index sf set-flag
 bind index Sf clear-flag
@@ -90,10 +92,8 @@ bind index l display-message
 bind index <Enter> display-message
 bind index n mail
 
-bind index z noop
 bind index zz sync-mailbox
 
-bind index Z noop
 bind index ZZ quit
 bind index ZQ exit
 
@@ -109,6 +109,7 @@ bind index,pager L sidebar-open
 #
 bind pager z noop
 bind pager h noop
+bind pager v noop
 
 bind pager g noop
 bind pager gg top
@@ -116,7 +117,6 @@ bind pager G bottom
 bind pager k previous-line
 bind pager j next-line
 bind pager h exit
-
 
 bind pager za view-attachments
 macro pager zu "<pipe-entry> urlscan<Enter>"
@@ -129,3 +129,20 @@ bind attach s noop
 macro attach s <save-entry><kill-line>$HOME/Downloads/<Enter>y<Enter>
 bind attach l view-attach
 bind attach h exit
+
+##################
+# Compose
+#
+
+bind compose d noop
+bind compose p noop
+bind compose q noop
+bind compose a noop
+
+bind compose dd detach-file
+bind compose r rename-attachment
+bind compose e edit-message
+bind compose p postpone-message
+
+macro compose q <exit>n<Enter> #don't ask
+macro compose a <attach-file>? #show browser

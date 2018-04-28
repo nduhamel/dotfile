@@ -13,6 +13,7 @@ source $XDG_CONFIG_HOME/neomutt/accounts
 source $XDG_CONFIG_HOME/neomutt/colors
 source $XDG_CONFIG_HOME/neomutt/index
 source $XDG_CONFIG_HOME/neomutt/pager
+source $XDG_CONFIG_HOME/neomutt/compose
 source $XDG_CONFIG_HOME/neomutt/keybinding
 
 
@@ -31,8 +32,11 @@ set pipe_decode # not sure, strip headers and eval mimes when piping
 set thorough_search # same, strip headers and eval mimes before searching
 
 #Sidebar ---------------------------------------------
-set sidebar_visible = yes
-set sidebar_width = 24
+# set sidebar_visible = yes
+# set sidebar_width = 24
+
+set mail_check_stats
+set folder_format = "%2C%t [%4n/%4m] %f"
 
 #Status Bar ------------------------------------------
 set status_chars  = " *%A"
