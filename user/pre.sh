@@ -8,3 +8,4 @@
 
 mkdir $HOME/.config/environment.d
 mkdir -p $HOME/.local/{bin,share}
+mkdir $HOME/.gnupg
