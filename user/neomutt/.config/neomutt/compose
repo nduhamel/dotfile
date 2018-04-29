@@ -18,3 +18,4 @@ set include                          # include message in replies
 set forward_quote                    # include message in forwards
 
 set editor = "vim"
+set query_command = "khard email --parsable '%s'"

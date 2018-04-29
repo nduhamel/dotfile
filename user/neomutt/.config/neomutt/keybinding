@@ -77,7 +77,6 @@ macro index ca <save-message><kill-line>=Archive<Enter>
 macro index m <save-message>?
 bind index dd delete-message
 bind index dt delete-thread
-bind index f forward-message
 
 bind index ss flag-message
 bind index sf set-flag
@@ -88,8 +87,10 @@ bind index sr read-thread #set entire thread read
 macro index sR <tag-pattern>~N<Enter><tag-prefix><clear-flag>N<untag-pattern>.<Enter> #Mark all as Read
 bind index st tag-entry
 
+bind index f forward-message
 bind index r reply
 bind index R group-reply
+
 bind index <space> collapse-thread
 
 bind index l display-message
@@ -100,6 +101,8 @@ bind index zz sync-mailbox
 
 bind index ZZ quit
 bind index ZQ exit
+
+macro index,pager A "<pipe-message>khard add-email<Return>"
 
 ##################
 # Sidebar
@@ -156,3 +159,10 @@ macro compose a <attach-file>? #show browser
 # browser
 #
 bind browser l select-entry
+
+##################
+# Editor
+#
+
+bind editor  <Tab> complete-query
+bind editor \CT complete
