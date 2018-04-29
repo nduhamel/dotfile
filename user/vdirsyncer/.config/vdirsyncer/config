@@ -1,0 +1,36 @@
+[general]
+status_path = "~/.local/share/vdirsyncer/status/"
+
+[pair contacts]
+a = "card_local"
+b = "card_nextcloud"
+collections = ["from a", "from b"]
+
+[storage card_local]
+type = "filesystem"
+path = "~/.local/contacts/"
+fileext = ".vcf"
+
+[storage card_nextcloud]
+type = "carddav"
+url = "https://cloud.jombi.fr"
+username = "nicolas"
+password.fetch = ["command", "~/.config/vdirsyncer/getpass.py", "nicolas"]
+
+[pair calendars]
+a = "cal_local"
+b = "cal_nextcloud"
+collections = ["from a", "from b"]
+
+[storage cal_local]
+type = "filesystem"
+path = "~/.local/calendars/"
+fileext = ".ics"
+
+[storage cal_nextcloud]
+type = "caldav"
+url = "https://cloud.jombi.fr"
+username = "nicolas"
+password.fetch = ["command", "~/.config/vdirsyncer/getpass.py", "nicolas"]
+
+
