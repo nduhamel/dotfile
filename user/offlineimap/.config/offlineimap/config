@@ -9,6 +9,7 @@ localrepository = jombi-local
 remoterepository = jombi-server
 autorefresh = 1
 quick = 10
+postsynchook = notmuch new
 
 [Repository jombi-local]
 type = Maildir

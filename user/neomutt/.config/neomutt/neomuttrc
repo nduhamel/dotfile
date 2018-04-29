@@ -16,7 +16,6 @@ source $XDG_CONFIG_HOME/neomutt/pager
 source $XDG_CONFIG_HOME/neomutt/compose
 source $XDG_CONFIG_HOME/neomutt/keybinding
 
-
 #Basic options --------------------------------------
 unset help
 set wait_key = no
