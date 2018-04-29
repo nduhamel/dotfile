@@ -2,11 +2,13 @@
 pythonfile = $XDG_CONFIG_HOME/offlineimap/getpass.py
 accounts = jombi
 metadata = $XDG_DATA_HOME/offlineimap
+maxsyncaccounts = 1
 
 [Account jombi]
 localrepository = jombi-local
 remoterepository = jombi-server
-#postsynchook = script.sh
+autorefresh = 1
+quick = 10
 
 [Repository jombi-local]
 type = Maildir
@@ -21,3 +23,5 @@ remotehost = mail.jombi.fr
 remoteuser = nicolas@jombi.fr
 folderfilter = lambda folder: folder not in ['dovecot.sieve']
 remotepasseval = get_pass("nicolas@jombi.fr")
+keepalive = 60
+holdconnectionopen = yes
