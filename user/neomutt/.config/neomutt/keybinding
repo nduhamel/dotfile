@@ -72,6 +72,9 @@ bind index G last-entry
 macro index gf <change-folder>?
 macro index gi <change-folder><kill-line>=INBOX<Enter>
 
+bind index J next-entry
+bind index k previous-entry
+
 bind index cc copy-message
 macro index ca <save-message><kill-line>=Archive<Enter>
 macro index m <save-message>?
@@ -111,13 +114,6 @@ macro index / \
            <change-folder-readonly>`echo ${XDG_CACHE_HOME:-$HOME/.cache}/notmuch/mutt/results`<enter>\
            <enter-command>set pipe_decode=\$my_old_pipe_decode wait_key=\$my_old_wait_key<enter>" \
                  "notmuch: search mail"
-
-##################
-# Sidebar
-#
-bind index,pager J sidebar-next
-bind index,pager K sidebar-prev
-bind index,pager L sidebar-open
 
 ##################
 # Pager
