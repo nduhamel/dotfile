@@ -2,11 +2,15 @@
 
 [[default]]
 path = ~/.local/calendars/default
-color = yellow
+color = dark magenta 
 
 [[personal]]
 path = ~/.local/calendars/personal
 color = light green
+
+[[work]]
+path = ~/.local/calendars/work
+color = light red
 
 [default]
 default_calendar = personal
@@ -17,7 +21,7 @@ timedelta = 15d
 local_timezone = Europe/Paris
 default_timezone = Europe/Paris
 timeformat = %H:%M
-dateformat = %d/%m/%Y
-longdateformat = %d/%m/%Y
-datetimeformat = %d/%m/%Y %H:%M
-longdatetimeformat = %d/%m/%Y %H:%M
+dateformat = %d/%m/%y
+longdateformat = %d/%m/%y
+datetimeformat = %d/%m/%y %H:%M
+longdatetimeformat = %d/%m/%y %H:%M
