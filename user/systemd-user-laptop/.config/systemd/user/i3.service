@@ -1,0 +1,8 @@
+[Unit]
+Description=i3 window manager
+
+[Service]
+ExecStart=/usr/bin/i3 -V
+
+[Install]
+Alias=windows-manager.service

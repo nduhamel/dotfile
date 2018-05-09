@@ -1,0 +1,11 @@
+[Unit]
+Description=Polybar for laptop screen
+Requires=i3.service
+After=i3.service
+
+[Service]
+ExecStartPre=/usr/bin/sleep 0.5
+ExecStart=/usr/bin/polybar laptop
+
+[Install]
+WantedBy=i3.service

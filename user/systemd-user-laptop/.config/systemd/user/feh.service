@@ -1,0 +1,10 @@
+[Unit]
+Description=Set wallpaper with feh
+Requires=windows-manager.service
+After=windows-manager.service
+
+[Service]
+ExecStart=/usr/bin/feh --bg-scale %h/pictures/wallpapers/starwars-bike.jpg
+
+[Install]
+WantedBy=i3.service
