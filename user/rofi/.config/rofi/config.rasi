@@ -1,0 +1,6 @@
+configuration {
+	modi: "drun";
+	terminal: "urxvt";
+        theme: "material";
+        font: "Inconsolata Nerd Font Mono 30";
+}
