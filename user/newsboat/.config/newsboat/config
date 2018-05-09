@@ -1,0 +1,21 @@
+bookmark-cmd "~/.local/bin/wallabag_add.sh"
+bookmark-autopilot yes
+bookmark-interactive yes
+
+browser "firefox %u"
+
+bind-key j down
+bind-key k up
+bind-key l open
+bind-key h quit articlelist
+bind-key n toggle-article-read articlelist
+bind-key N mark-feed-read articlelist
+bind-key N mark-feed-read feedlist
+bind-key s save articlelist
+bind-key s save article
+bind-key h quit article
+bind-key r reload-all feedlist
+bind-key b bookmark article
+bind-key b bookmark articlelist
+
+
