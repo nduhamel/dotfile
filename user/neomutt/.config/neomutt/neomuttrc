@@ -15,6 +15,7 @@ source $XDG_CONFIG_HOME/neomutt/index
 source $XDG_CONFIG_HOME/neomutt/pager
 source $XDG_CONFIG_HOME/neomutt/compose
 source $XDG_CONFIG_HOME/neomutt/keybinding
+source $XDG_CONFIG_HOME/neomutt/pgp
 
 #Basic options --------------------------------------
 unset help

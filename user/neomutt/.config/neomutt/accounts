@@ -21,3 +21,5 @@ set record = "+Sent"
 set from     = "nicolas@jombi.fr"
 set sendmail = "/usr/bin/msmtp -C $XDG_CONFIG_HOME/msmtp/msmtprc -a jombi"
 set sendmail_wait = 0
+
+set pgp_default_key =0xB7DF154B

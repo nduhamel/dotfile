@@ -72,7 +72,7 @@ bind index G last-entry
 macro index gf <change-folder>?
 macro index gi <change-folder><kill-line>=INBOX<Enter>
 
-bind index J next-entry
+bind index j next-entry
 bind index k previous-entry
 
 bind index cc copy-message
