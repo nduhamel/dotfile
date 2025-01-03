@@ -13,7 +13,7 @@ fileext = ".vcf"
 
 [storage card_nextcloud]
 type = "carddav"
-url = "https://cloud.jombi.fr"
+url = "https://cloud.quimbo.fr/remote.php/dav"
 username = "nicolas"
 password.fetch = ["command", "~/.config/vdirsyncer/getpass.py", "nicolas"]
 
@@ -29,7 +29,7 @@ fileext = ".ics"
 
 [storage cal_nextcloud]
 type = "caldav"
-url = "https://cloud.jombi.fr"
+url = "https://cloud.quimbo.fr/remote.php/dav"
 username = "nicolas"
 password.fetch = ["command", "~/.config/vdirsyncer/getpass.py", "nicolas"]
 
