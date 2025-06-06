@@ -4,7 +4,7 @@ status_path = "~/.local/share/vdirsyncer/status/"
 [pair contacts]
 a = "card_local"
 b = "card_nextcloud"
-collections = ["from a", "from b"]
+collections = ["default"]
 
 [storage card_local]
 type = "filesystem"
@@ -13,14 +13,14 @@ fileext = ".vcf"
 
 [storage card_nextcloud]
 type = "carddav"
-url = "https://cloud.quimbo.fr/remote.php/dav"
+url = "https://cloud.alouettes.jombi.fr/remote.php/dav"
 username = "nicolas"
 password.fetch = ["command", "~/.config/vdirsyncer/getpass.py", "nicolas"]
 
 [pair calendars]
 a = "cal_local"
 b = "cal_nextcloud"
-collections = ["from a", "from b"]
+collections = ["personal", "work"]
 
 [storage cal_local]
 type = "filesystem"
@@ -29,8 +29,6 @@ fileext = ".ics"
 
 [storage cal_nextcloud]
 type = "caldav"
-url = "https://cloud.quimbo.fr/remote.php/dav"
+url = "https://cloud.alouettes.jombi.fr/remote.php/dav"
 username = "nicolas"
 password.fetch = ["command", "~/.config/vdirsyncer/getpass.py", "nicolas"]
-
-
