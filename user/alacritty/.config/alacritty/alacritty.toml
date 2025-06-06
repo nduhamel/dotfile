@@ -1,0 +1,144 @@
+# Configuration Alacritty pour Arch + i3
+# Emplacement: ~/.config/alacritty/alacritty.toml
+
+# Variables d'environnement
+[env]
+# Terme optimal pour vim et tmux
+TERM = "xterm-256color"
+
+# Paramètres de la fenêtre
+[window]
+# Transparence de la fenêtre (0.0 = transparent, 1.0 = opaque)
+opacity = 0.95
+
+# Décoration de fenêtre (pour i3, on peut garder les décorations)
+decorations = "Full"
+
+# Dimensions initiales de la fenêtre
+[window.dimensions]
+columns = 120
+lines = 40
+
+# Padding interne (espace autour du texte)
+[window.padding]
+x = 10
+y = 10
+
+# Configuration des polices
+[font]
+# Taille de la police
+size = 12.0
+
+# Police normale
+[font.normal]
+family = "DejaVu Sans Mono"
+style = "Regular"
+
+# Police en gras
+[font.bold]
+family = "DejaVu Sans Mono"
+style = "Bold"
+
+# Police italique
+[font.italic]
+family = "DejaVu Sans Mono"
+style = "Oblique"
+
+# Gestion du scrollback (historique des lignes)
+[scrolling]
+# Nombre de lignes gardées en mémoire (important pour tmux)
+history = 10000
+# Nombre de lignes à faire défiler d'un coup
+multiplier = 3
+
+# Configuration de la souris
+[mouse]
+# Masquer le curseur lors de la frappe
+hide_when_typing = true
+
+# Configuration de la sélection
+[selection]
+# Sauvegarder automatiquement la sélection dans le clipboard
+save_to_clipboard = true
+
+# Thème de couleurs (adapté pour vim et tmux)
+[colors.primary]
+background = "#1e1e1e"
+foreground = "#d4d4d4"
+
+# Couleurs normales
+[colors.normal]
+black = "#1e1e1e"
+red = "#f44747"
+green = "#4ec9b0"
+yellow = "#ffcc02"
+blue = "#569cd6"
+magenta = "#c586c0"
+cyan = "#4ec9b0"
+white = "#d4d4d4"
+
+# Couleurs brillantes
+[colors.bright]
+black = "#808080"
+red = "#f44747"
+green = "#4ec9b0"
+yellow = "#ffcc02"
+blue = "#569cd6"
+magenta = "#c586c0"
+cyan = "#4ec9b0"
+white = "#d4d4d4"
+
+# Raccourcis clavier
+[[keyboard.bindings]]
+# Copier-coller (Ctrl+Shift+C/V)
+key = "C"
+mods = "Control|Shift"
+action = "Copy"
+
+[[keyboard.bindings]]
+key = "V"
+mods = "Control|Shift"
+action = "Paste"
+
+[[keyboard.bindings]]
+# Navigation tmux-friendly
+key = "PageUp"
+mods = "Shift"
+action = "ScrollPageUp"
+
+[[keyboard.bindings]]
+key = "PageDown"
+mods = "Shift"
+action = "ScrollPageDown"
+
+[[keyboard.bindings]]
+key = "Home"
+mods = "Shift"
+action = "ScrollToTop"
+
+[[keyboard.bindings]]
+key = "End"
+mods = "Shift"
+action = "ScrollToBottom"
+
+[[keyboard.bindings]]
+# Zoom (Ctrl + / Ctrl -)
+key = "Plus"
+mods = "Control"
+action = "IncreaseFontSize"
+
+[[keyboard.bindings]]
+key = "Minus"
+mods = "Control"
+action = "DecreaseFontSize"
+
+[[keyboard.bindings]]
+key = "Key0"
+mods = "Control"
+action = "ResetFontSize"
+
+[[keyboard.bindings]]
+# Nouvelle fenêtre Alacritty (Ctrl+Shift+Enter)
+key = "Return"
+mods = "Control|Shift"
+action = "SpawnNewInstance"
